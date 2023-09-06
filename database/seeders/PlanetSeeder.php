@@ -15,58 +15,58 @@ class PlanetSeeder extends Seeder
     {   
         $param = [
         [
-            'planet_ja' => '水星',
-            'planet_en' => 'MERCURY',
+            'name_ja' => '水星',
+            'name_en' => 'MERCURY',
             'radius' => 2439,
             'weight' => 3310,
                     
         
         ],
         [
-            'planet_ja' => '金星',
-            'planet_en' => 'VENUS',
+            'name_ja' => '金星',
+            'name_en' => 'VENUS',
             'radius' => 6052,
             'weight' => 48700,        
         
         ],
         [
-            'planet_ja' => '地球',
-            'planet_en' => 'EARTH',
+            'name_ja' => '地球',
+            'name_en' => 'EARTH',
             'radius' => 6378,
             'weight' => 59760,        
         
         ],
         [
-            'planet_ja' => '火星',
-            'planet_en' => 'MARS',
+            'name_ja' => '火星',
+            'name_en' => 'MARS',
             'radius' => 3397,
             'weight' => 6420,        
         
         ],
         [
-            'planet_ja' => '木星',
-            'planet_en' => 'JUPITER',
+            'name_ja' => '木星',
+            'name_en' => 'JUPITER',
             'radius' => 71492,
             'weight' => 18993500,        
         
         ],
         [
-            'planet_ja' => '土星',
-            'planet_en' => 'SATURN',
+            'name_ja' => '土星',
+            'name_en' => 'SATURN',
             'radius' => 60268,
             'weight' => 5685980,        
         
         ],
         [
-            'planet_ja' => '天王星',
-            'planet_en' => 'URANUS',
+            'name_ja' => '天王星',
+            'name_en' => 'URANUS',
             'radius' => 25559,
             'weight' => 868910,        
         
         ],
         [
-            'planet_ja' => '海王星',
-            'planet_en' => 'NEPTUNE',
+            'name_ja' => '海王星',
+            'name_en' => 'NEPTUNE',
             'radius' => 24764,
             'weight' => 1029660,        
         
