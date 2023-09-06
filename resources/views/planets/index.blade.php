@@ -17,10 +17,15 @@
         @foreach ($planets as $planet)
             <tr>
             @foreach ($planet->getAttributes() as $column => $value)
-                <th>{{ $value }}</th>
+                @if ($loop->first)
+                    {{-- 最初の行の場合、IDカラムを表示しない --}}
+                @else
+                    <th>{{ $value }}</th>
+                @endif
             @endforeach
             </tr>
         @endforeach
     </table>
+    <a href="/planets/create">新規登録</a>
 </body>
 </html>

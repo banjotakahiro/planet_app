@@ -11,4 +11,15 @@ class PlanetController extends Controller
         $planets = Planet::all();
         return view('planets.index',compact('planets'));
     }
+
+    public function create(){
+        return view('planets.create');
+    }
+    
+    public function store(Request $request){
+        $planet = new Planet($request->all());
+        $planet->save();
+        return redirect('planets.index');
+    }
+
 }
