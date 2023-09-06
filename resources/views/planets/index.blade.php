@@ -6,6 +6,7 @@
     <title>惑星一覧</title>
 </head>
 <body>
+
     <h1>惑星一覧</h1>
     <table border="1">
         <tr>
@@ -16,6 +17,7 @@
         </tr>
         @foreach ($planets as $planet)
             <tr>
+            @csrf
             @foreach ($planet->getAttributes() as $column => $value)
                 @if ($loop->first)
                     {{-- 最初の行の場合、IDカラムを表示しない --}}
@@ -23,6 +25,15 @@
                     <th>{{ $value }}</th>
                 @endif
             @endforeach
+            <th><a href="planets/{{ $planet->id }}">詳細</a></th>
+            <th><a href="planets/{{ $planet->id }}/edit">編集</a></th>
+            <th>
+                <form action="/planets/{{ $planet->id }}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <input type="submit" value="削除する" onclick="if(!confirm('削除しますか？')){return false};">
+                </form>
+            </th>
             </tr>
         @endforeach
     </table>

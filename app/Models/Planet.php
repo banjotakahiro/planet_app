@@ -14,4 +14,6 @@ class Planet extends Model
         'radius',
         'weight'
     ];
+    public $timestamps = false;
 }
+
